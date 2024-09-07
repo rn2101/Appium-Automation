@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-01T10:55:28 IST" name="Default suite" finished-at="2024-09-01T10:55:41 IST" duration-ms="12859">
+    <groups>
+    </groups>
+    <test started-at="2024-09-01T10:55:28 IST" name="Default test" finished-at="2024-09-01T10:55:41 IST" duration-ms="12859">
+      <class name="ritiknagarproject.MobileBrowserTest">
+        <test-method is-config="true" signature="configAppium()[pri:0, instance:ritiknagarproject.MobileBrowserTest@4f6ee6e4]" started-at="2024-09-01T10:55:28 IST" name="configAppium" finished-at="2024-09-01T10:55:41 IST" duration-ms="12798" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Can't stop process; it's not currently running (cmd: 'C:\\Users\\nriti\\Downloads\\chromedriver_win32 --port\=52765 --adb-port\=5037 --verbose') 
+Host info: host: 'RN', ip: '192.168.1.53'
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Can't stop process; it's not currently running (cmd: 'C:\\Users\\nriti\\Downloads\\chromedriver_win32 --port\=52765 --adb-port\=5037 --verbose') 
+Host info: host: 'RN', ip: '192.168.1.53'
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at ritiknagarproject.BrowserBaseTest.configAppium(BrowserBaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAppium -->
+        <test-method signature="broserTest()[pri:0, instance:ritiknagarproject.MobileBrowserTest@4f6ee6e4]" started-at="2024-09-01T10:55:41 IST" name="broserTest" finished-at="2024-09-01T10:55:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Can't stop process; it's not currently running (cmd: 'C:\\Users\\nriti\\Downloads\\chromedriver_win32 --port\=52765 --adb-port\=5037 --verbose') 
+Host info: host: 'RN', ip: '192.168.1.53'
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Can't stop process; it's not currently running (cmd: 'C:\\Users\\nriti\\Downloads\\chromedriver_win32 --port\=52765 --adb-port\=5037 --verbose') 
+Host info: host: 'RN', ip: '192.168.1.53'
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}]}]
+Capabilities {appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\nriti\Downloads\ch..., appium:deviceName: RitikEmulator, browserName: Chrome, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:91)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:103)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+at ritiknagarproject.BrowserBaseTest.configAppium(BrowserBaseTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broserTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ritiknagarproject.MobileBrowserTest@4f6ee6e4]" started-at="2024-09-01T10:55:41 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1725168341438" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ritiknagarproject.MobileBrowserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
